@@ -1,0 +1,53 @@
+.month-name h1 {
+  margin: 40px;
+}
+
+.month-summary {
+  width: 25%;
+  background-color: rgb(15, 113, 8);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.month-summary h3 {
+  font-size: 22px;
+}
+
+.coin-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.happy-coin1,
+.happy-coin2 {
+  position: absolute;
+  top: -80%;
+  left: 70%;
+  width: 600px;
+  height: 600px;
+  transition: opacity 0;
+}
+
+.happy-coin1 {
+  opacity: 0;
+  z-index: 1;
+}
+
+.happy-coin2 {
+  opacity: 1;
+  z-index: 2;
+}
+
+.coin-container:hover .happy-coin1 {
+  opacity: 1;
+  top: -95%;
+}
+
+.coin-container:hover .happy-coin2 {
+  opacity: 0;
+}
